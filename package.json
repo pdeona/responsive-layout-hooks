@@ -16,6 +16,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "resolutions": {
+    "merge": "^1.2.1"
+  },
   "eslintConfig": {
     "extends": "react-app",
     "rules": {
