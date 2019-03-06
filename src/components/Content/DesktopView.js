@@ -16,14 +16,16 @@ const getClassName = idx => {
 const DesktopView = ({ items }) => {
   const { width } = useWindowDimensions()
   return (
-    <div
-      className={classNames('tile is-ancestor', {
-        'is-vertical': width > 414 && width < 1088
-      })}
-    >
-      {items.map((item, idx) => (
-        <Tile className={getClassName(idx)} key={item.title} {...item} />
-      ))}
+    <div className='section'>
+      <div
+        className={classNames('tile is-ancestor', {
+          'is-vertical': width > 414 && width < 1088
+        })}
+      >
+        {items.map((item, idx) => (
+          <Tile className={getClassName(idx)} key={item.title} {...item} />
+        ))}
+      </div>
     </div>
   )
 }
