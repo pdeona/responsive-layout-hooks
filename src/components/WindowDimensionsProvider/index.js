@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 
-const WindowDimensionsCtx = createContext(null)
+export const WindowDimensionsCtx = createContext(null)
 
 const windowDims = () => ({
   height: window.innerHeight,
